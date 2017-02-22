@@ -1,21 +1,15 @@
 package org.usfirst.frc.team5461.robot.subsystems;
 import org.usfirst.frc.team5461.robot.commands.PanAndTiltCommand;
-
-import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-/**
- *
- */
 public class PanAndTilt extends Subsystem {
 	Servo pan;
 	Servo tilt;
 	double tiltVal = 0.5;
 	double panVal = 0.5;
     public void initDefaultCommand() {
-        // Set the default command for a subsystem here.
-       setDefaultCommand(new PanAndTiltCommand());
+    setDefaultCommand(new PanAndTiltCommand());
     }
     public void incTilt() {
     	tiltVal+=0.1;

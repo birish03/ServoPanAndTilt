@@ -2,11 +2,8 @@ package org.usfirst.frc.team5461.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
-import edu.wpi.first.wpilibj.buttons.JoystickButton;
-
 import org.usfirst.frc.team5461.robot.commands.DecreasePan;
 import org.usfirst.frc.team5461.robot.commands.DecreaseTilt;
-import org.usfirst.frc.team5461.robot.commands.ExampleCommand;
 import org.usfirst.frc.team5461.robot.commands.IncreasePan;
 import org.usfirst.frc.team5461.robot.commands.IncreaseTilt;
 import org.usfirst.frc.team5461.robot.commands.PanAndTiltCommand;
@@ -17,8 +14,6 @@ import org.usfirst.frc.team5461.robot.commands.PanAndTiltCommand;
  */
 public class OI {
 	public Joystick leftstick = new Joystick(0);
-	public Joystick rightstick = new Joystick(0);
-	public JoystickButton aButton = new JoystickButton(leftstick,0); 
 	public DPadButton dpadUp = new DPadButton(new Point(0, 1), leftstick);
 	public DPadButton dpadRight = new DPadButton(new Point(1, 0), leftstick);
 	public DPadButton dpadDown = new DPadButton(new Point(0, -1), leftstick);
